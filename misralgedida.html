@@ -113,7 +113,7 @@ Licence URI: https://www.os-templates.com/template-terms
           </div>
           
           <div class="column">
-            <div class="card" style="background-image:url('images/Flag_of_Egypt.png'); background-size: cover; background-position: center;">
+            <div class="card" id="moneyServicesMain" onclick="DisplayMoneyServices()" style="background-image:url('images/Flag_of_Egypt.png'); background-size: cover; background-position: center;">
               <h3 style="padding-top: 27%; color: #c09300 ;">Money Services</h3>
             </div>
           </div>
@@ -123,6 +123,18 @@ Licence URI: https://www.os-templates.com/template-terms
               <h3 style="padding-top: 27%; color: #c09300 ;">Educational Services</h3>
             </div>
           </div>          
+        </div>
+        <div class="row" style=" margin-top: 5%;" id="moneyServicesOptions">
+          <div class="column" style="margin-left: 15%;">
+            <div class="card">
+              <h3 style="padding-top: 27%;">Taxes</h3>
+            </div>
+          </div> 
+          <div class="column" style="margin-left: 10%;">
+            <div class="card">
+              <h3 style="padding-top: 27%; ;">Payment Services</h3>
+            </div>
+          </div> 
         </div>
         <h6 class="heading" style="font-size: 30px; text-align: left; margin-top: 5%;">Reach us!</h6>
         <div class="row" style=" margin-top: 5%;">
@@ -279,6 +291,7 @@ Licence URI: https://www.os-templates.com/template-terms
   <a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
   <!-- JAVASCRIPTS -->
   <script>
+    var displayFlag = 0;
     function DisplayChat(){
       var chatSupportDocument = document.getElementById("chat_support");
       chatSupportDocument.style.display = "block";
@@ -289,6 +302,21 @@ Licence URI: https://www.os-templates.com/template-terms
     }
     function Redirect(){
       window.location.href = "ElectionsAndVoting.html";
+    }
+    function DisplayMoneyServices(){
+      var moneyservicesMain = document.getElementById("moneyServicesMain");
+      var moneyServicesDocument = document.getElementById("moneyServicesOptions");
+      if(displayFlag == 0){
+        moneyServicesDocument.style.display = 'block';
+        moneyservicesMain.classList.add('scaled');
+        displayFlag = 1;
+      }
+      else{
+        moneyServicesDocument.style.display = 'none';
+        moneyservicesMain.classList.remove('scaled');
+        displayFlag = 0;
+      }
+
     }
   </script>
   <script src="layout/scripts/jquery.min.js"></script>
