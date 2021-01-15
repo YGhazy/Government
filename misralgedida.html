@@ -15,7 +15,8 @@ Licence URI: https://www.os-templates.com/template-terms
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
@@ -42,8 +43,8 @@ Licence URI: https://www.os-templates.com/template-terms
             <li><a class="drop" href="#"> Services</a>
               <ul>
                 <li><a href="online services.html">Online services</a></li>
-                <li><a href="Election and Voting.html">Election and voting </a></li>
-                <li><a href="Educational services .html">Educational services</a></li>
+                <li><a href="ElectionsAndVoting.html">Election and voting </a></li>
+                <li><a href="Educational services.html">Educational services</a></li>
                 <li><a href="The Disabled Services.html">The Disabled Services </a></li>
 
               </ul>
@@ -96,33 +97,39 @@ Licence URI: https://www.os-templates.com/template-terms
       <!--Selection Options-->
 
       <section id="selectionOptions">
-        
+
         <h6 class="heading" style="font-size: 30px; text-align: left;">Egyptian Local Government</h6>
 
         <div class="row" style="margin-top: 3%;">
           <div class="column">
-            <div class="card" style="background-image:url('images/Flag_of_Egypt.png'); background-size: cover; background-position: center;">
+            <div class="card"
+              style="background-image:url('images/Flag_of_Egypt.png'); background-size: cover; background-position: center;"
+              onclick="Redirect('Online');">
               <h3 style="padding-top: 27%; color: #c09300 ;">Online Services</h3>
             </div>
           </div>
-        
+
           <div class="column">
-            <div class="card" style="background-image:url('images/Flag_of_Egypt.png'); background-size: cover; background-position: center;" onclick="RedirectElections();">
+            <div class="card"
+              style="background-image:url('images/Flag_of_Egypt.png'); background-size: cover; background-position: center;"
+              onclick="Redirect('elections');">
               <h3 style="padding-top: 27%; color: #c09300 ;">Elections and Voting</h3>
             </div>
           </div>
-          
+
           <div class="column">
             <div class="card" id="moneyServicesMain" onclick="DisplayMoneyServices()" style="background-image:url('images/Flag_of_Egypt.png'); background-size: cover; background-position: center;">
               <h3 style="padding-top: 27%; color: #c09300 ;">Money Services</h3>
             </div>
           </div>
-          
+
           <div class="column">
-            <div class="card" style="background-image:url('images/Flag_of_Egypt.png'); background-size: cover; background-position: center;" onclick="RedirectEducational();">
+            <div class="card"
+              style="background-image:url('images/Flag_of_Egypt.png'); background-size: cover; background-position: center;"
+              onclick="Redirect('Educational');">
               <h3 style="padding-top: 27%; color: #c09300 ;">Educational Services</h3>
             </div>
-          </div>          
+          </div>
         </div>
         <div class="row" style=" margin-top: 5%;" id="moneyServicesOptions">
           <div class="column" style="margin-left: 15%;">
@@ -139,36 +146,75 @@ Licence URI: https://www.os-templates.com/template-terms
         <h6 class="heading" style="font-size: 30px; text-align: left; margin-top: 5%;">Reach us!</h6>
         <div class="row" style=" margin-top: 5%;">
           <div class="column">
-            <div class="card" onclick="DisplayChat()">
+            <div class="card" onclick="DisplayChat()" style="height:230px!important">
+              <i class="  fas fa-hospital-alt" style="font-size: 40px;margin-bottom:20px;"></i>
+
               <h3>Health Care Services</h3>
               <p>Click here to start a live chat with our health care services support team!</p>
             </div>
           </div>
-        
+
           <div class="column">
-            <div class="card">
+            <div class="card" style="height:230px!important">
+              <i class=" fas fa-laptop" style="font-size: 40px;margin-bottom:20px;"></i>
+
               <h3>Social Care Agencies</h3>
               <p>How To Serve Your Community
                 You can know information about social institutions and their activities in your society.</p>
             </div>
           </div>
-          
+
           <div class="column">
-            <div class="card">
+            <div class="card" style="height:230px!important">
+              <i class=" fas fa-chart-line" style="font-size: 40px;margin-bottom:20px;"></i>
               <h3>Taxes</h3>
               <p>View our tax policy</p>
             </div>
           </div>
-          
+
           <div class="column">
-            <div class="card">
+            <div class="card" style="height:230px!important" onclick="showForm()">
+              <i class="  fab fa-black-tie
+              " style="font-size: 40px;margin-bottom:20px;"onclick="showForm()"></i>
+
               <h3>Find a Job</h3>
               <p>Find all available job vacancies and contact us for an opportunity!</p>
             </div>
-          </div> 
+          </div>
         </div>
       </section>
+      <div id="showForm">
+        <div id="comments">
+          <h2>Please kindly fill the information below: </h2>
+       
+          <form action="#" method="post">
+            <div class="two_third first">
+              <label for="name">Name <span>*</span></label>
+              <input type="text" name="name" id="name" value="" size="22" required>
+            </div>
+            <div class="two_third first">
+              <label for="name">Phone number <span>*</span></label>
+              <input type="number" name="name" id="name" value="" size="22" required>
+            </div>
+            <div class="two_third first">
+              <label for="name">Phone number <span>*</span></label>
+              <input type="text" name="name" id="name" value="" size="22" required>
+            </div>
+            <div class="two_third first">
+              <label class="file">
+              <label for="comment">Upload CV <span>*</span></label>
+                <input type="file" id="file" aria-label="File browser example" required>
+                <span class="file-custom"></span>
+              </label>
+            </div> 
+            <div class=" two_third first">
 
+              <input type="submit" name="submit" value="Submit Form">
+
+            </div>
+          </form>
+        </div>
+      </div>
       <!--End of Selection Options-->
       <!-- Health Care services Support -->
       <div class="chatSupportSection" id="chat_support">
@@ -178,7 +224,8 @@ Licence URI: https://www.os-templates.com/template-terms
               <div class="panel panel-default">
                 <div class="panel-heading top-bar">
                   <div class="col-md-12 col-xs-12" style="display: inline-block;">
-                    <h3 class="panel-title"> Health Care Support Chat <i class="fas fa-window-close" style="margin-left:120px; cursor: pointer;" onclick="HideChat()"></i></h3>
+                    <h3 class="panel-title"> Health Care Support Chat <i class="fas fa-window-close"
+                        style="margin-left:120px; cursor: pointer;" onclick="HideChat()"></i></h3>
 
                   </div>
                   <div class="col-md-4 col-xs-4" style="text-align: right;">
@@ -200,19 +247,18 @@ Licence URI: https://www.os-templates.com/template-terms
                         class=" img-responsive ">
                     </div>
                   </div>
-                  
+
                 </div>
                 <div class="">
-                    <div class="row">
-                      <div class="col-lg">
-                        <input type="text" style="width: 100%;"
-                        placeholder="Write your message here..." />
-                      </div>
-                      <div class="col-lg">
-                          <button style="width: 100%;">Send</button>
-                      </div>
-                      
+                  <div class="row">
+                    <div class="col-lg">
+                      <input type="text" style="width: 100%;" placeholder="Write your message here..." />
                     </div>
+                    <div class="col-lg">
+                      <button style="width: 100%;">Send</button>
+                    </div>
+
+                  </div>
                 </div>
               </div>
             </div>
@@ -230,7 +276,7 @@ Licence URI: https://www.os-templates.com/template-terms
     <footer id="footer" class="hoc clear">
       <!-- ################################################################################################ -->
       <div class="group btmspace-80">
-        <div class="one_half first">
+        <div class=" first">
           <h6 class="heading">Egypt GOV</h6>
           <p>The Egyptian local government is based in different areas to reach all citizens and give tailored services
             based on the citizens needs. In this form the government tends to deal with different parts of the country
@@ -247,21 +293,7 @@ Licence URI: https://www.os-templates.com/template-terms
             <li><a class="faicon-vk" href="#"><i class="fab fa-vk"></i></a></li>
           </ul>
         </div>
-        <div class="one_half">
-          <h6 class="heading">The Government </h6>
-          <p class="nospace btmspace-15">Our concern is to give you the best online service, through our local
-            governmental partitions based on the area of living. .</p>
-          <form method="post" action="#">
-            <fieldset>
-              <legend>Newsletter:</legend>
-              <input class="btmspace-15" type="text" value="" placeholder="Name">
-              <input class="btmspace-15" type="text" value="" placeholder="Email">
-              <input class="btmspace-15" type="number" value="" placeholder="Phone number ">
-              <input class="btmspace-15" type="text" value="" placeholder="Tell us your opinion">
-              <button type="submit" value="submit">Submit</button>
-            </fieldset>
-          </form>
-        </div>
+
 
       </div>
       <!-- ################################################################################################ -->
@@ -296,12 +328,22 @@ Licence URI: https://www.os-templates.com/template-terms
       var chatSupportDocument = document.getElementById("chat_support");
       chatSupportDocument.style.display = "block";
     }
-    function HideChat(){
+    function HideChat() {
       var chatSupportDocument = document.getElementById("chat_support");
       chatSupportDocument.style.display = "none";
     }
-    function RedirectElections(){
-      window.location.href = "ElectionsAndVoting.html";
+    function Redirect(url) {
+      if (url == 'Online')
+        window.location.href = "online services.html";
+      else if (url == 'elections')
+        window.location.href = "ElectionsAndVoting.html";
+      else
+        window.location.href = "Educational services.html";
+    }
+    function showForm() {
+      document.getElementById('showForm').style.display = "block";
+
+
     }
     function RedirectEducational(){
       window.location.href = "EducationalServices.html";

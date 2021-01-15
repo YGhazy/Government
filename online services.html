@@ -41,8 +41,8 @@ Licence URI: https://www.os-templates.com/template-terms
             <li><a class="drop" href="#"> Services</a>
               <ul>
                 <li><a href="online services.html">Online services</a></li>
-                <li><a href="Election and Voting.html">Election and voting </a></li>
-                <li><a href="Educational services .html">Educational services</a></li>
+                <li><a href="ElectionsAndVoting.html">Election and voting </a></li>
+                <li><a href="Educational services.html">Educational services</a></li>
                 <li><a href="The Disabled Services.html">The Disabled Services </a></li>
 
               </ul>
@@ -83,65 +83,176 @@ Licence URI: https://www.os-templates.com/template-terms
     <main class="hoc container clear">
       <!-- main body -->
       <!-- ################################################################################################ -->
-      <section id="introblocks">
-        <!-- <div class="sectiontitle">
-          <h6 class="heading"></h6>
-          <p>The Egyptian local government is based in different areas to reach all citizens and give tailored services based on the citizens needs. In this form the government tends to deal with different parts of the country to achieve providing services to all citizens at an easy, online, reachable and interactive methods.  The local government is available 24/7 to all citizens, wherever they are.</p>
-        </div> -->
-        <ul class="nospace group">
-          <li class="one_half  first">
-            <article><a href="#"><i class="fas fa-money-bill-alt"></i></a>
-              <h6 class="heading">Money Affairs</h6>
-              <p class="text-left"> you can bay your taxes online, and do some other financial transactions. </p>
-              <!-- <footer><a class="btn" href="#">More Details</a></footer> -->
-            </article>
-          </li>
-          <li class="one_half  ">
-            <article><a href="#"><i class="fas fa-user-tie"></i></a>
-              <h6 class="heading">Labour Affairs</h6>
-              <p class="text-left">You can get to know all the labour information &
-              apply for vacancies.</p>
-
-              <!-- <footer><a class="btn" href="#">More Details</a></footer> -->
-            </article>
-          </li>
-          <li class="one_half  first">
-            <article><a href="#"><i class="fas fa-vote-yea"></i></a>
-              <h6 class="heading">Election and Voting</h6>
-              <p>you can vote to choose your region's president online. </p>
-              <p>you can know all the requirements to run for the presidency of your region. </p>
-
-              <!-- <footer><a class="btn" href="#">More Details</a></footer> -->
-            </article>
-          </li>
+      <section id="selectionOptions">
 
 
-          <li class="one_half  ">
-            <article><a href="#"><i class=" fas fa-laptop"></i></a>
-              <h6 class="heading">Digital Transformation Path</h6>
-              <p>We are always striving to develop our digital platform </p>
-            <p>Learn all the information that interests you about providing digital services and how to deal with
-                them.
-              </p>
-              <!-- <footer><a class="btn" href="#">More Details</a></footer> -->
-            </article>
-          </li>
+        <div class="row" style="margin-top: 3%;">
+          <div class="column">
+            <div class="card"
+              style="background-image:url('images/Flag_of_Egypt.png'); background-size: cover; background-position: center;"
+              onclick="showGovernment()">
+              <h3 style="padding-top: 27%; color: #c09300 ;">Government online shops</h3>
+            </div>
+          </div>
 
-          <li class="first">
-            <article><a href="#"><i class="far fa-building"></i></a>
-              <h6 class="heading">Government Agencies and Elected Officials</h6>
-              <p>You can learn about all the details regarding the administrative structure in your area.   </p>
-                <p>You can get acquainted with the configuration of the current administrative organ and its constituent
-                characters.</p>
-              <p>You can learn about the course of the electoral process for these elected bodies.
-              </p>
-              <!-- <footer><a class="btn" href="#">More Details</a></footer> -->
-            </article>
-          </li>
+          <div class="column">
+            <div class="card"
+              style="background-image:url('images/Flag_of_Egypt.png'); background-size: cover; background-position: center;"
+              onclick="showDriver()">
+              <h3 style="padding-top: 27%; color: #c09300 ;">Driver license renwal</h3>
+            </div>
+          </div>
 
+          <div class="column">
+            <div class="card"
+              style="background-image:url('images/Flag_of_Egypt.png'); background-size: cover; background-position: center;"
+              onclick="showPayment()">
+              <h3 style="padding-top: 27%; color: #c09300 ;">Payment services</h3>
+            </div>
+          </div>
 
-        </ul>
+          <div class="column">
+            <div class="card"
+              style="background-image:url('images/Flag_of_Egypt.png'); background-size: cover; background-position: center;"
+              onclick="showLegal()">
+              <h3 style="padding-top: 27%; color: #c09300 ;">Legal services Submit complaints</h3>
+            </div>
+          </div>
+        </div>
+
       </section>
+      <div id="GovernmentForm">
+        <div id="comments">
+          <h2>Our concern is to give you the best online service, through our local governmental partitions based on the area of living. </h2>
+          <form action="#" method="post">
+
+            <div class="two_third first">
+              <label for="name">Name <span>*</span></label>
+              <input type="text" name="name" id="name" value="" size="22" required>
+            </div>
+            <div class="two_third first">
+              <label for="name">Phone number<span>*</span></label>
+              <input type="number" name="name" id="name" value="" size="22" required>
+            </div>
+            <div class="two_third first">
+              <label for="name">E-mail<span>*</span></label>
+              <input type="text" name="name" id="name" value="" size="22" required>
+            </div>
+            <div class="two_third first">
+              <label for="name">Tell us your opinion <span>*</span></label>
+              <textarea name="comment" id="comment" cols="25" rows="10" required></textarea>
+            </div>
+        
+            <div class=" two_third first">
+
+              <input type="submit" name="submit" value="Submit Form">
+
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div id="DriverForm">
+        <div id="comments">
+          <h2>Driver license renewal and identification card:</h2>
+          <p>
+            You can renew your cards up to two years. You have several convenient options to renew your driver license
+            or identification card during this time, including:
+          </p>
+          <form action="#" method="post">
+
+            <div class="two_third first">
+              <label for="name">Telephone <span>*</span></label>
+              <input type="number" name="name" id="name" value="" size="22" required>
+            </div>
+            <div class="two_third first">
+              <label for="name">Mail <span>*</span></label>
+              <input type="text" name="name" id="name" value="" size="22" required>
+            </div>
+    
+            <div class=" two_third first">
+
+              <input type="submit" name="submit" value="Submit Form">
+
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div id="PaymentForm">
+        <div id="comments">
+          <h2>We are covering all types of electronic and non-cash payments:</h2>
+          <p>Credit transfers</p>
+          <p>Direct debits</p>
+          <p>Card payments</p>
+          <p>Mobile and online payments</p>
+
+          <form action="#" method="post">
+
+            <div class="two_third first">
+              <label for="name">Name <span>*</span></label>
+              <input type="text" name="name" id="name" value="" size="22" required>
+            </div>
+            <div class="two_third first">
+              <label for="name">Credit Card <span>*</span></label>
+              <input type="number" name="name" id="name" value="" size="22" required>
+            </div>
+        
+
+            <div class="two_third first">
+
+              <label for="name">Choose service <span>*</span></label>
+
+              <select id="cars" name="cars" 
+              style="font-size: 21px;
+              border: 1px solid;
+              border-color: #D7D7D7;
+              padding:5px;width: 100%;" >
+                <option value="Taxes">Taxes</option>
+                <option value="payment "> Payment </option>
+                <option value="others">Others</option>
+              
+              </select>
+            </div>
+            <div class=" two_third first">
+
+              <input type="submit" name="submit" value="Submit Form">
+
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div id="LegalForm">
+        <div id="comments">
+          <h2>Please kindly fill the information below:</h2>
+          <form action="#" method="post">
+
+            <div class="two_third first">
+              <label for="name">Name <span>*</span></label>
+              <input type="text" name="name" id="name" value="" size="22" required>
+            </div>
+            <div class="two_third first">
+              <label for="name">Phone number<span>*</span></label>
+              <input type="number" name="name" id="name" value="" size="22" required>
+            </div>
+            <div class="two_third first">
+              <label for="name">The complaint<span>*</span></label>
+              <textarea name="comment" id="comment" cols="25" rows="10" required></textarea>
+            </div>
+            <div class="two_third first">
+              <label for="name">Home number<span>*</span></label>
+              <input type="number" name="name" id="name" value="" size="22" required>
+            </div>
+
+            <div class=" two_third first">
+
+              <input type="submit" name="submit" value="Submit Form">
+
+            </div>
+          </form>
+        </div>
+      </div>
       <!-- ################################################################################################ -->
       <!-- / main body -->
       <div class="clear"></div>
@@ -155,9 +266,12 @@ Licence URI: https://www.os-templates.com/template-terms
     <footer id="footer" class="hoc clear">
       <!-- ################################################################################################ -->
       <div class="group btmspace-80">
-        <div class="one_half first">
+        <div class=" first">
           <h6 class="heading">Egypt GOV</h6>
-          <p>The Egyptian local government is based in different areas to reach all citizens and give tailored services based on the citizens needs. In this form the government tends to deal with different parts of the country to achieve providing services to all citizens at an easy, online, reachable and interactive methods. The local government is available 24/7 to all citizens, wherever they are.</p>
+          <p>The Egyptian local government is based in different areas to reach all citizens and give tailored services
+            based on the citizens needs. In this form the government tends to deal with different parts of the country
+            to achieve providing services to all citizens at an easy, online, reachable and interactive methods. The
+            local government is available 24/7 to all citizens, wherever they are.</p>
           <!-- <p class="btmspace-30">Tortor rhoncus sed dictum vitae viverra posuere lorem pellentesque suscipit eros vel
             ante curabitur pretium [<a href="#"><i class="fas fa-arrow-right"></i></a>]</p> -->
           <ul class="faico clear">
@@ -169,21 +283,7 @@ Licence URI: https://www.os-templates.com/template-terms
             <li><a class="faicon-vk" href="#"><i class="fab fa-vk"></i></a></li>
           </ul>
         </div>
-        <div class="one_half">
-          <h6 class="heading">The Government </h6>
-          <p class="nospace btmspace-15">Our concern is to give you the best online service, through our local governmental partitions based on the area of living. .</p>
-          <form method="post" action="#">
-            <fieldset>
-              <legend>Newsletter:</legend>
-              <input class="btmspace-15" type="text" value="" placeholder="Name">
-              <input class="btmspace-15" type="text" value="" placeholder="Email">
-              <input class="btmspace-15" type="number" value="" placeholder="Phone number ">
-              <input class="btmspace-15" type="text" value="" placeholder="Tell us your opinion">
-              <button type="submit" value="submit">Submit</button>
-            </fieldset>
-          </form>
-        </div>
-
+   
       </div>
       <!-- ################################################################################################ -->
       <div id="ctdetails" class="clear">
@@ -226,6 +326,33 @@ Licence URI: https://www.os-templates.com/template-terms
   <!-- ################################################################################################ -->
   <a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
   <!-- JAVASCRIPTS -->
+  <script>
+    function showGovernment() {
+      document.getElementById('GovernmentForm').style.display = "block";
+      document.getElementById('DriverForm').style.display = "none";
+      document.getElementById('PaymentForm').style.display = "none";
+      document.getElementById('LegalForm').style.display = "none";
+
+    }
+    function showDriver() {
+      document.getElementById('GovernmentForm').style.display = "none";
+      document.getElementById('DriverForm').style.display = "block";
+      document.getElementById('PaymentForm').style.display = "none";
+      document.getElementById('LegalForm').style.display = "none";
+    }
+    function showPayment() {
+      document.getElementById('GovernmentForm').style.display = "none";
+      document.getElementById('DriverForm').style.display = "none";
+      document.getElementById('PaymentForm').style.display = "block";
+      document.getElementById('LegalForm').style.display = "none";
+    }
+    function showLegal() {
+      document.getElementById('GovernmentForm').style.display = "none";
+      document.getElementById('DriverForm').style.display = "none";
+      document.getElementById('PaymentForm').style.display = "none";
+      document.getElementById('LegalForm').style.display = "block";
+    }
+  </script>
   <script src="layout/scripts/jquery.min.js"></script>
   <script src="layout/scripts/jquery.backtotop.js"></script>
   <script src="layout/scripts/jquery.mobilemenu.js"></script>
