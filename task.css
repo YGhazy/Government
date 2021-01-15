@@ -1,0 +1,113 @@
+﻿.x 
+
+{
+    padding: 56px;
+}
+.z a 
+{
+
+text-transform: uppercase;
+background-color: red;
+border-radius: 7px;
+padding: 9px 90px;
+color:#FFF;
+cursor: pointer;
+
+
+}
+
+.z
+{
+    color:#fff
+}
+
+
+.z a:hover
+{
+background-color: #000;
+
+}
+
+.q
+{
+    margin-bottom:50px
+}
+
+
+.aa ul
+{
+    color:red;
+    list-style: none;
+    display: inline-block;
+    font-weight: bold;
+    margin-top:40px;
+    cursor: pointer;
+    
+    
+}
+.aa ul li
+{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+
+.ww li
+{
+font-weight: bold;
+
+}
+
+
+.ss
+{
+
+    background-color: #DDD;
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+}
+.ss h3{    padding-top: 60px;}
+
+
+
+.ca
+{
+    background-color: #d2d2b9;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.ca h3 
+
+{
+    padding-top: 60px;
+}
+
+
+.ca:hover
+{
+    background-color: red;
+}
+.qaz
+{
+    background-color: #d2d2b9;
+    width: 400px;
+    height: 300px;
+    border-radius: 10px; 
+}
+
+.qaz h3 
+
+{
+    padding-top: 100px;
+}
+
+
+.qaz:hover
+{
+    background-color: black;
+}
+
+
