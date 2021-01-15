@@ -698,3 +698,21 @@ img {
 	transform: scale(1.1);
 	transition: all 0.5s;
 }
+
+
+#GovernmentForm{
+display: none;
+margin-top: 100px;
+}
+#DriverForm{
+	display: none;
+	margin-top: 100px;
+}
+#PaymentForm{
+	display: none;
+	margin-top: 100px;
+}
+#LegalForm{
+	display: none;
+	margin-top: 100px;
+}
