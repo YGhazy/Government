@@ -692,6 +692,7 @@ img {
 	transition: all 0.5s;
 	cursor: pointer;
 	color: #fff !important;
+	border-radius: 20px;
   }
   .card:hover{
 	transform: scale(1.1);
